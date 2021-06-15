@@ -1,0 +1,71 @@
+"Resource/UI/HudAccountPanel.res"
+{
+	"CHudAccountPanel"
+	{
+		"delta_item_x"		"999999"
+		"PositiveColor"		"0 255 0 255"
+		"NegativeColor"		"255 0 0 255"
+		"delta_lifetime"	"1"
+		"delta_item_font"	"roboto18"
+	}
+	
+	"AccountBG"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"	"AccountBG"
+		"xpos"		"999999"
+	}
+	"ResBG"
+	{
+		"ControlName"			"CExImageButton"
+		"fieldName"			"ResBG"
+		"xpos"				"115"
+		"ypos"				"80"
+		"zpos"				"1"
+		"wide"				"109"
+		"tall"				"35"
+		"visible"			"1"		
+		"enabled"			"1"
+		"defaultbgcolor_override"	"SelectionBoxBg"
+		"PaintBackgroundType"		"2"
+		"TextInsetX"			"999999"
+	}
+		"AmmoTX"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoTX"
+		"font"			"Default"
+		"fgcolor"		"FgColorHL2"
+		"xpos"			"100"
+		"ypos"			"93"
+		"zpos"			"2"
+		"wide"			"50"
+		"tall"			"20"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"east"
+		"textinsetx"	"5"
+		"labelText"		"METAL"
+	}		
+	"AccountValue"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"	"AccountValue"
+		"xpos"		"86"
+		"ypos"		"80"
+		"zpos"		"2"
+		"wide"		"200"
+		"tall"		"35"
+		"autoResize"	"1"
+		"pinCorner"	"2"
+		"visible"	"1"
+		"enabled"	"1"
+		"tabPosition"	"0"
+		"labelText"	"%metal%"
+		"textAlignment"	"center"
+		"dulltext"	"0"
+		"brighttext"	"0"
+		"font"			"HudNumbers"
+		"fgcolor"		"FgColorHL2"
+	}
+}

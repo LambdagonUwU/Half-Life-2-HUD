@@ -1,0 +1,119 @@
+event HudHealthBonusPulse
+{
+
+	Animate PlayerStatusHealthValue		fgColor	"BrightFg" linear 0.0 0.075
+	Animate PlayerStatusHealthValue		fgColor	"FgColorHL2" linear 0.125 0.075
+
+	Animate PlayerStatusHealthValueGlow		fgColor	"BrightFg" linear 0.0 0.075
+	Animate PlayerStatusHealthValueGlow		fgColor	"FgColorHL2" linear 0.125 0.075
+
+	Animate HealthTX	fgColor	"BrightFg" linear 0.0 0.075
+	Animate HealthTX	fgColor	"FgColorHL2" linear 0.125 0.075
+
+	Animate PlayerHealthBG BgColor "FgColorHL2_2" linear 0.0 0.075
+	Animate PlayerHealthBG BgColor "BgColor" linear 0.125 0.3
+
+	RunEvent HudHealthBonusPulseLoop 0.4
+}
+event HudHealthBonusPulseLoop
+{
+	RunEvent HudHealthBonusPulse 0.0
+}
+event HudHealthBonusPulseStop
+{
+	StopEvent HudHealthBonusPulse 0.0
+	StopEvent HudHealthBonusPulseLoop 0.0
+	RunEvent ResetHUDBG 0.0 
+}
+event HudHealthDyingPulse
+{
+
+	Animate PlayerStatusHealthValue		fgColor	"BrightDamagedFg"	Linear	0.0		0.1
+	Animate PlayerStatusHealthValue		fgColor	"DamagedFg"			Deaccel	0.1		0.8
+
+	Animate PlayerStatusHealthValueGlow		fgColor	"BrightDamagedFg"	Linear	0.0		0.1
+	Animate PlayerStatusHealthValueGlow		fgColor	"180 0 0 100"			Deaccel	0.1		0.8
+	
+	Animate HealthTX					fgColor	BrightDamagedFg		Linear	0.0		0.1
+	Animate HealthTX					fgColor	DamagedFg			Deaccel	0.1		0.8
+
+	Animate PlayerHealthBG				BgColor	"100 0 0 80"		Linear	0.0		0.1
+	Animate PlayerHealthBG				BgColor	"BgColor"			Deaccel	0.1		0.8
+
+	RunEvent HudHealthDyingPulseLoop 0.8
+}
+
+event HudHealthDyingPulseLoop
+{
+	RunEvent HudHealthDyingPulse 0.0
+}
+event HudHealthDyingPulseStop
+{
+	StopEvent HudHealthDyingPulse 0.0
+	StopEvent HudHealthDyingPulseLoop 0.0
+
+	Animate PlayerStatusHealthValue			fgColor	"FgColorHL2"	Linear	0.0		0.0
+	Animate HealthTX						fgColor	"FgColorHL2"	Linear	0.0		0.0
+
+	Animate PlayerHealthBG BgColor "SelectionBoxBg" linear 0.0 0.0
+	Animate SpecPlayerHealthBG BgColor "SelectionBoxBg" linear 0.0 0.0
+	Animate PlayerHealthCrossBG BgColor "SelectionBoxBg" linear 0.0 0.0
+}
+event HudLowAmmoPulse
+{
+	Animate HudWeaponLowAmmoImage Alpha 255 linear 0.0 0.075
+	Animate HudWeaponLowAmmoImage Alpha 0 linear 0.125 0.075
+	Animate PlayerAmmoBG BgColor LowColor1 linear 0.0 0.075
+	Animate PlayerAmmoBG BgColor LowColor2 linear 0.125 0.075
+	RunEvent HudLowAmmoPulseLoop 0.25
+}
+event HudLowAmmoPulseLoop
+{
+	RunEvent HudLowAmmoPulse 0.0
+}
+event HudLowAmmoPulseStop
+{
+	StopEvent HudLowAmmoPulse 0.0
+	StopEvent HudLowAmmoPulseLoop 0.0
+	Animate PlayerAmmoBG BgColor "SelectionBoxBg" linear 0.0 0.0
+}
+
+event ResetHUDBG
+{
+	Animate PlayerStatusHealthValue	fgColor	"FgColorHL2" Linear 0.0 0.6
+	Animate PlayerStatusHealthValueGlow	fgColor	"0 0 0 0" Linear 0.0 0.6
+	Animate HealthTX fgColor "FgColorHL2" Linear 0.0 0.6
+	Animate PlayerHealthBG BgColor "BgColor" linear 0.0 0.6
+}
+
+event HudMedicCharged
+{
+
+	Animate	MedicUberPercentBG			BgColor	"FgColorHL2_2"		Linear	0.0		0.1
+	Animate	MedicUberPercentBG			BgColor	"BgColor"			Deaccel	0.1		0.8
+
+	Animate HealthTX2					fgColor	"BrightFg" 		Linear	0.0		0.1
+	Animate HealthTX2					fgColor	"FgColorHL2" 	Deaccel	0.1		0.8
+
+	Animate	ChargeLabel 	fgColor	"BrightFg" 		Linear	0.0		0.1
+	Animate	ChargeLabel 	fgColor	"FgColorHL2" 	Deaccel	0.1		0.8
+
+	RunEvent HudMedicChargedLoop	0.8
+}
+
+// call to loop HudMedicCharged
+event HudMedicChargedLoop
+{
+	RunEvent HudMedicCharged 0.0
+}
+
+event HudMedicChargedStop
+{
+	StopEvent HudMedicCharged 0.0
+	StopEvent HudMedicChargedLoop 0.0
+	
+	Animate	ChargeLabel 	FgColor		"FgColorHL2"		Linear 0.0 0.0001
+	Animate HealthTX2		fgColor		"FgColorHL2" 	Linear 0.0 0.0001
+	
+	Animate	MedicUberPercentBG			BgColor		"SelectionBoxBg"		Linear 0.0 0.0
+}
