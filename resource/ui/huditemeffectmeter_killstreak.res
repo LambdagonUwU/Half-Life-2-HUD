@@ -24,8 +24,8 @@
 		"tall"						"35"
 		"visible"					"1"		
 		"enabled"					"1"
-		"defaultbgcolor_override"	"0 0 0 130"
-		"PaintBackgroundType"		"0"
+		"defaultbgcolor_override"	"SelectionBoxBg"
+		"PaintBackgroundType"		"2"
 		"TextInsetX"				"999999"
 	}
 	
@@ -47,7 +47,7 @@
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"roboto18"
+		"font"					"default"
 	}
 
 	"ItemEffectMeter"
@@ -72,7 +72,7 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"-20"
+		"xpos"					"10"
 		"ypos"					"-3"
 		"zpos"					"5"
 		"wide"					"100"
@@ -82,20 +82,20 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"%progresscount%"
-		"textAlignment"			"east"
-		"dulltext"				"0"
+		"textAlignment"			"center"
+		"dulltext"	"0"
 		"brighttext"			"0"
-		"font"					"roboto40"
-        "fgcolor"		         "lachrymaLement"
+		"font"					"HudNumbers"
+		"fgcolor"				"FgColorHL2"
 	}
 			"AmmoTX"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AmmoTX"
-		"font"			"roboto12"
-		"fgcolor"		"lachrymaLement"
+		"font"			"Default"
+		"fgcolor"		"FgColorHL2"
 		"xpos"			"-10"
-		"ypos"			"5"
+		"ypos"			"3"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"40"
