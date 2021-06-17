@@ -31,7 +31,7 @@
 	{	
 		"ControlName"		"ContinuousProgressBar"
 		"fieldName"		"ItemEffectMeter"
-		"font"			"Default"
+		"font"			"default"
 		"xpos"			"c0"
 		"ypos"			"c140"
 		"zpos"			"2"
@@ -71,8 +71,8 @@
 		"textAlignment"			"east"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"roboto40"
-        "fgcolor"		"lachrymaLement"
+		"font"			"default"
+		"fgcolor"		"FgcolorHL2"
 	}
 			"AmmoTX"
 	{
