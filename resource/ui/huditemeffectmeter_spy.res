@@ -9,7 +9,7 @@
 		"ypos"			"80"	[$WIN32]
 		"wide"			"f50"
 		"tall"			"480"
-		"MeterFG"		"White"
+		"MeterFG"		"FgColorHL2"
 		"MeterBG"		"Gray"
 	}
 	
@@ -74,33 +74,14 @@
 		"font"					"HudNumbers"
 		"fgcolor"	"FgColorHL2"
 	}
-	{
-		"ControlName"			"CExLabel"
-		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"c10"
-		"ypos"					"c112"
-		"zpos"					"2"
-		"wide"					"100"
-		"tall"					"40"	
-		"pinCorner"				"2"
-		"visible"				"1"
-		"enabled"				"1"
-		"tabPosition"			"0"
-		"labelText"				"%progresscount%"
-		"textAlignment"			"east"
-		"dulltext"				"0"
-		"brighttext"			"0"
-		"font"					"default"
-        "fgcolor"		         "FgcolorHL2"
-	}
-		"AmmoTX"
+			"AmmoTX"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AmmoTX"
 		"font"			"Default"
 		"fgcolor"		"FgColorHL2"
-		"xpos"			"1"
-		"ypos"			"c120"
+		"xpos"			"c14"
+		"ypos"			"c118"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"40"
@@ -108,21 +89,21 @@
 		"enabled"		"1"
 		"textAlignment"	"east"
 		"textinsetx"	"5"
-		"labelText"		"COUNT"
+		"labelText"		"CRITS"
 	}		
-		
-		"DiamondbackCritsBG"
+	"ItemEffectMeterDemoBG" //background
 	{
-		"ControlName"				"CExImageButton"
-		"fieldName"					"PlayerAmmoBG"
-		"xpos"						"0"
-		"ypos"						"0"
+		"ControlName"			"CExImageButton"
+		"fieldName"			"ItemEffectMeterDemoBG"
+		"xpos"						"c30"
+		"ypos"						"c116"
 		"zpos"						"2"
-		"wide"						"90"
+		"wide"						"108"
 		"tall"						"35"
 		"visible"					"1"		
 		"enabled"					"1"
 		"defaultbgcolor_override"	"SelectionBoxBg"
-		"PaintBackgroundType"		"2"
+		"PaintBackgroundType"		"0"
 		"TextInsetX"				"999999"
+	}		
 }
