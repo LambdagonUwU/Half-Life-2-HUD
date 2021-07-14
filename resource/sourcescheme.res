@@ -15,6 +15,49 @@ Scheme
 	// this is a list of all the colors used by the scheme
 	Colors
 	{
+		"lachrymaLement"  "255 255 255 255"
+
+		"FgColorHL2"			"255 220 0 100"
+		"FgColorHL2_2"			"255 220 0 35"
+		"FgColor_vrmode"	"255 220 0 200"
+		"BgColor"			"0 0 0 76"
+		
+		"BrightFg"		"255 220 0 255"
+		"DarkFg"		"255 220 0 100"
+
+		"DamagedBg"			"180 0 0 200"
+		"DamagedFg"			"180 0 0 230"
+		"BrightDamagedFg"		"255 0 0 255"
+
+		// weapon selection colors
+		"SelectionNumberFg"		"255 220 0 255"
+		"SelectionTextFg"		"255 220 0 255"
+		"SelectionEmptyBoxBg" 	"0 0 0 80"
+		"SelectionBoxBg" 		"0 0 0 80"
+		"SelectionSelectedBoxBg" "0 0 0 80"
+		
+		"ZoomReticleColor"	"255 220 0 255"
+
+		// HL1-style HUD colors
+		"Yellowish"			"255 160 0 255"
+		"Normal"			"255 208 64 255"
+		"Caution"			"255 48 0 255"
+        
+	//	Health Colors for bxhud
+		"BuffedColor1"	"34 164 135 100" //default overheal colors
+		"BuffedColor2"	"0 146 118 50"	
+		
+//		"BuffedColorAlt1"	"0 145 255 255"
+//		"BuffedColorAlt2"	"0 102 255 255"
+		
+		"LowColor1"		"221 74 56 255"	
+		"LowColor2"		"147 44 31 255"			
+		
+		"HealthPickupColor"	"0 255 0 255"
+		
+		"FullUberColor1"		"34 164 135 255"	
+		"FullUberColor2"		"0 146 118 255"	
+		
 		// base colors
 		"White"				"255 255 255 255"
 		"OffWhite"			"216 216 216 255"
@@ -924,6 +967,109 @@ Scheme
 	// specifies all the custom (non-system) font files that need to be loaded to service the above described fonts
 	CustomFontFiles
 	{
-		"1"		"resource/HALFLIFE2.ttf"
-	
+		"1" "resource/tf.ttf"
+		"2" "resource/tfd.ttf"
+		"3" "resource/K12HL2.ttf"
+		"4" "resource/K12HL2.ttf"
+		{
+			"font" "resource/TF2.ttf"
+			"name" "TF2"
+			"russian"
+			{
+				"range" "0x0000 0xFFFF"
+			}
+			"polish"
+			{
+				"range" "0x0000 0xFFFF"
+			}
+		}
+		"4" 
+		{
+			"font" "resource/TF2Secondary.ttf"
+			"name" "TF2 Secondary"
+			"russian"
+			{
+				"range" "0x0000 0xFFFF"
+			}
+			"polish"
+			{
+				"range" "0x0000 0xFFFF"
+			}
+		}
+		"5" 
+		{
+			"font" "resource/TF2Professor.ttf"
+			"name" "TF2 Professor"
+			"russian"
+			{
+				"range" "0x0000 0x00FF"
+			}
+			"polish"
+			{
+				"range" "0x0000 0x00FF"
+			}
+		}	
+		"6" 
+		{
+			"font" "resource/TF2Build.ttf"
+			"name" "TF2 Build"
+			"russian"
+			{
+				"range" "0x0000 0xFFFF"
+			}
+			"polish"
+			{
+				"range" "0x0000 0xFFFF"
+			}
+			"turkish"
+			{
+				"range" "0x0000 0xFFFF"
+			}
+		}
+		"8" 
+		{
+			"font" "resource/fonts/RobotoCondensed-Bold.ttf"
+			"name" "Roboto Condensed Bold"
+		}
+		"9" 
+		{
+			"font" "resource/fonts/RobotoCondensed-Regular.ttf"
+			"name" "Roboto Condensed Regular"
+		}
+		"10" 
+		{
+			"font" "resource/fonts/FORMASGE.ttf"
+			"name" "Formas germetricas 1"
+		}
+		"11" // Konr Wings
+		{
+			"font" "resource/fonts/Garm3nFont.ttf"
+			"name" "Garm3nFont"
+		}
+		"12" 
+		{
+			"font" "resource/fonts/Paula.ttf"
+			"name" "Paula"
+		}
+		"13"
+		{
+		"font" "resource/fonts/crosshairsV3.ttf"
+		"name"	"CrosshairsV3"
+		}
+		"14" 
+		{
+			"font" "resource/fonts/symbol.ttf"
+			"name" "symbol"
+		}
+		"15"
+		{
+			"resource/HALFLIFE2.ttf"
+			"name" "HalfLife2"
+		}
+		"16"		
+		{
+			"resource/DINRg.ttf"
+			"name" "DIN-Regular"
+		}
 	}
+}	

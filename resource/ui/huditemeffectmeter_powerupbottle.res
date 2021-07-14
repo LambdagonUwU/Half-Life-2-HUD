@@ -23,12 +23,11 @@
 		"zpos"				"1"
 		"wide"				"50"
 		"tall"				"35"
-		"visible"			"1"		
-		"enabled"			"1"
-		"defaultbgcolor_override"	"0 0 0 130"
+		"enabled"					"1"
+		"defaultbgcolor_override"	"SelectionBoxBg"
 		"PaintBackgroundType"		"0"
-		"TextInsetX"			"999999"
-	}
+		"TextInsetX"				"999999"
+	}	
 	
 	"ItemEffectMeterBG"
 	{
@@ -110,7 +109,7 @@
 		"textAlignment"	"center"
 		"dulltext"	"0"
 		"brighttext"	"0"
-		"font"		"roboto40"
-		"fgcolor"	"lachrymaLement"
+		"font"		"HudNumbers"
+		"fgcolor"	"FgcolorHL2"
 	}
 }
