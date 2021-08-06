@@ -6,7 +6,7 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"-350"	[$WIN32]
+		"xpos"			"-340"	[$WIN32]
 		"x_offset"		"0"
 		"ypos"			"-12"	[$WIN32]
 		"wide"			"f0"
@@ -40,9 +40,9 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"SecondaryTX"
-		"font"			"roboto10"
-		"fgcolor"		"lachrymaLement"
-		"xpos"			"c-87"
+		"font"			"Verdana"
+		"fgcolor"		"FgColorHl2"
+		"xpos"			"c-80"
 		"ypos"			"c138"
 		"zpos"			"5"
 		"wide"			"50"
@@ -90,8 +90,8 @@
 		"textAlignment"	"west"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"font"			"HudFontSmallest"
-		"fgcolor"		"178 0 0 255"
+		"font"			"Verdana"
+		"fgcolor"		"FgColorHl2"
 	}
 
 	"ItemEffectMeter"
@@ -99,11 +99,11 @@
 		"ControlName"	"ContinuousProgressBar"
 		"fieldName"		"ItemEffectMeter"
 		"font"			"Default"
-		"xpos"			"c-66"
-		"ypos"			"c163"
+		"xpos"			"c-63"
+		"ypos"			"c164"
 		"zpos"			"2"
-		"wide"			"50"
-		"tall"			"8"				
+		"wide"			"40"
+		"tall"			"4"				
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -111,7 +111,7 @@
 		"textAlignment"	"Left"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"fgcolor"		"White"
+		"fgcolor"		"FgColorHl2"
 	}
 
 	"ItemEffectMeter2"
@@ -120,10 +120,10 @@
 		"fieldName"		"ItemEffectMeter2"
 		"font"			"Default"
 		"xpos"			"c-14"
-		"ypos"			"c163"
+		"ypos"			"c164"
 		"zpos"			"2"
-		"wide"			"50"
-		"tall"			"8"				
+		"wide"			"40"
+		"tall"			"4"				
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -131,6 +131,6 @@
 		"textAlignment"	"Left"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"fgcolor"		"White"
+		"fgcolor"		"FgColorHl2"
 	}
 }

@@ -62,14 +62,14 @@
 		"textAlignment"		"Left"
 		"dulltext"		"0"
 		"brighttext"		"0"
-		"MeterFG"		"255 220 0 255" //Why doesn't this work
-		"MeterFG_override"	"255 220 0 255"
-		"fgcolor"		"255 220 0 255"
-		"fgcolor_override"	"255 220 0 255"
-		"MeterBG"		"255 220 0 255"
-		"MeterBG_override"	"255 220 0 255"
-		"bgcolor"		"255 220 0 100"
-		"bgcolor_override"	"255 220 0 100"
+		"MeterFG"		"BrightFg"
+		"MeterFG_override"	"BrightFg"
+		"fgcolor"		"BrightFg"
+		"fgcolor_override"	"BrightFg"
+		"MeterBG"		"BrightFg"
+		"MeterBG_override"	"BrightFg"
+		"bgcolor"		"FgColorHL2"
+		"bgcolor_override"	"FgColorHL2"
 	}					
 	"ChargeBG"
 	{

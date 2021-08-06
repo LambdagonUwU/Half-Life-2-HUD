@@ -501,8 +501,8 @@
 		"wide"			"60"
 		"wide_minmode"	"50"
 		"tall"			"8"
-		"MeterFG"		"White"
-		"MeterBG"		"Gray"
+		"MeterFG"		"FgColorHL2"
+		"MeterBG"		"BrightFg"
 	}
 
 	HudBossHealth
